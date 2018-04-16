@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MobChat</string>
+
+    <string name="login_hint">Login:</string>
+    <string name="password_hint">Password:</string>
+    <string name="login_placeholder">login</string>
+    <string name="password_placeholder">password</string>
+    <string name="log_in">Log in</string>
+    <string name="about">By Staskkk</string>
 </resources>

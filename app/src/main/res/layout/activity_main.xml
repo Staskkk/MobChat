@@ -1,18 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="5dp"
+    tools:context="com.mancersoft.mobchat.MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageViewIcon"
+        android:contentDescription="@string/log_in"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@mipmap/ic_launcher" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/editTextLogin"
+        android:layout_toStartOf="@+id/editTextLogin"
+        android:layout_alignBaseline="@+id/editTextLogin"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/login_hint"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/textViewPassword"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:width="180dp"
+        android:hint="@string/login_placeholder"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/editTextPassword"
+        android:layout_toStartOf="@+id/editTextPassword"
+        android:layout_alignBaseline="@+id/editTextPassword"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/password_hint"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/buttonLogIn"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:hint="@string/password_placeholder"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:width="180dp" />
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textViewAbout"
+        android:layout_marginBottom="20dp"
+        android:textSize="24sp"
+        android:onClick="buttonLoginOnClick"
+        android:text="@string/log_in" />
+
+    <TextView
+        android:id="@+id/textViewAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonLogIn"
+        android:layout_alignLeft="@+id/buttonLogIn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/buttonLogIn"
+        android:layout_alignStart="@+id/buttonLogIn"
+        android:layout_marginBottom="30dp"
+        android:text="@string/about"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+</RelativeLayout>
