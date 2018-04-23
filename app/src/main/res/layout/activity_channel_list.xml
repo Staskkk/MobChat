@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    tools:context=".ChatListActivity">
+    tools:context=".ChannelListActivity">
     <ListView
-        android:id="@+id/listViewChatList"
+        android:id="@+id/listViewChannelList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </RelativeLayout>

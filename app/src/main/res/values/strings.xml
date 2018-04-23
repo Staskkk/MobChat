@@ -7,4 +7,12 @@
     <string name="password_placeholder">password</string>
     <string name="log_in">Log in</string>
     <string name="about">By Staskkk</string>
+
+    <string name="login_error">Login error: %s</string>
+    <string name="get_channel_error">Get channel error: %s</string>
+    <string name="enter_channel_error">Enter channel error: %s</string>
+    <string name="send_message_error">Send message error: %s</string>
+
+    <string name="message_placeholder">Message</string>
+    <string name="send">Send</string>
 </resources>
