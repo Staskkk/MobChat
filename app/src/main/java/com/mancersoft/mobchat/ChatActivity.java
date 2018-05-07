@@ -29,16 +29,16 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     public void buttonSendOnClick(View v) {
-        ChannelListActivity.openChannel.sendUserMessage(editTextMessage.getText().toString(), null, "776", new BaseChannel.SendUserMessageHandler() {
+        ChannelListActivity.currentOpenChannel.sendUserMessage(editTextMessage.getText().toString(), null, "776", new BaseChannel.SendUserMessageHandler() {
             @Override
             public void onSent(UserMessage userMessage, SendBirdException e) {
                 if (e != null) {
                     Toast.makeText(getBaseContext(), getString(R.string.send_message_error, e.getMessage()), Toast.LENGTH_SHORT).show();
                     return;
                 }
-                
+
                 editTextMessage.getText().clear();
-                adapter.add(userMessage.getMessage());
+                adapter.add(userMessage.getSender().getUserId() + ": " + userMessage.getMessage());
             }
         });
     }

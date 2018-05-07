@@ -32,43 +32,13 @@
         android:id="@+id/editTextLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/textViewPassword"
-        android:layout_marginRight="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_above="@+id/buttonLogIn"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:width="180dp"
         android:hint="@string/login_placeholder"
         android:ems="10"
         android:inputType="textPersonName" />
-
-    <TextView
-        android:id="@+id/textViewPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/editTextPassword"
-        android:layout_toStartOf="@+id/editTextPassword"
-        android:layout_alignBaseline="@+id/editTextPassword"
-        android:layout_marginRight="10dp"
-        android:layout_marginEnd="10dp"
-        android:text="@string/password_hint"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/buttonLogIn"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginEnd="40dp"
-        android:hint="@string/password_placeholder"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:width="180dp" />
 
     <Button
         android:id="@+id/buttonLogIn"
